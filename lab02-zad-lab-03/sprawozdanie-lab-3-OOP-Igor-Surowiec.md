@@ -1,0 +1,97 @@
+## I. Dokumentacja do lab. nr 1 - "Klasy oraz ich elementy składowe, metody klasy"
+## II. Imię i nazwisko - grupa ABC, semestr III
+## III. Przedmiot - "Programowanie obiektowe"
+
+## IV. Opis zadania do realizacji
+Do zrealizowania były następujące zadania:  
+  - Napisz klasę Film z polami tytul, rezyser, rokProdukcji, obejrzany oraz metodami obejrzyj(), wyswietlInfo() lub toString() (zalecane). Utwórz dwa obiekty danej klasy i ustaw wybrane przez siebie wartości pól oraz wyświetl informacje za pomocą zdefiniowanych metod.
+  - 
+  - Utwórz klasę KalkulatorTemperatur z metodami statycznymi celsiusToFahrenheit(double) i fahrenheitToCelsius(double).
+  -  
+  - Zaimplementuj klasę BankAccount z metodami deposit(double), withdraw(double) i getBalance() oraz podstawową walidacją.
+  - 
+  - Napisz klasę StudentGroup, która posiada pole statyczne zliczające liczbę utworzonych obiektów klasy Student.
+  -
+  - Przygotuj klasę Rectangle z konstruktorem, polami width i height oraz metodami area() i perimeter() wykorzystującymi this.
+  -
+  - Dodaj do jednej wybranej klasy metodę z varargs (np. sum(int... numbers)) i pokaż jej użycie dla różnych liczb argumentów.
+
+
+_
+
+## V. Technologie wykorzystane w zadaniu
+  - Java,  
+  - Python,
+  - Markdown
+
+## VI. Realizacja zadania
+<br>
+
+#### 1. Kod Javy (lub Pythona)
+W zadaniu wykorzystano .... (krótko opisać, co zostało użyte).
+
+Kod wykorzystany do rozwiązania zadania (zadań):  
+
+```java
+    public class ObwodPoleKola {
+      public static void main(String[] args) {
+        int promienKola = 8;
+        double pi = 3.14;
+    
+        double poleKola = pi * promienKola * promienKola;
+        double obwodKola = 2 * pi * promienKola;
+    
+        System.out.println("Pole kola wynosi: " + poleKola);
+        System.out.println("Obwod kola wynosi: " + obwodKola);
+      }
+    }
+```
+- lub można skorzystać z innego języka, np.:  
+
+```python
+# Calculate interest to track the growth of an investment
+
+
+def invest(amount, rate, years):
+    """Display year on year growth of an initial investment"""
+    for year in range(1, years + 1):
+        amount = amount * (1 + rate)
+        print(f"year {year}: ${amount:,.2f}")
+
+
+amount = float(input("Enter a principal amount: "))
+rate = float(input("Enter an anual rate of return: "))
+years = int(input("Enter a number of years: "))
+
+invest(amount, rate, years)
+```
+
+#### 2. Zrzuty ekranu pokazujące wynik działania aplikacji/skryptu:  
+![dowolny tekst alterntywny](../images/dandelion.jpg)
+
+#### 2a. Struktura projektu/programu:  
+![struktura-projektu](../images/struktura.png)
+
+<br>
+
+## III. Dodatkowe informacje o zadaniu
+Można tu wpisać informacje o elementach, które nie zostały wymienione we wcześniejszych punktach.  Mozna też pominąć ten punkt, eśli nie ma potrzeby jeg użycia.  
+
+#### 1. Tabele w Markdownie
+
+| Syntax        | Description     |
+|:-------------:|:---------------:|
+|    Header     |      Title      |
+|   Paragraph   |      Text       |
+<br>
+
+#### 2. Linki
+  - do stron: What is a [markup language](https://www.semrush.com/blog/markup-language/)?
+  - do innych sekcji w dokumencie: 
+      - w miejscu, do którego chcemy się przenieść tworzymy znacznik `a` z atrybutem `id`, czyli np. `<a id="start"></a>`,  
+      - tworzymy link do ww. znacznika za pomocą składni `[tekst linku](#id-w-znaczniku-a)`, w naszym przypadku może to być np. [Link do początku dokumentacji](#start).  
+<br>
+  
+#### 3. Inne
+  - wpisujemy informacje dotyczące zadania, które uważamy za istotne,  
+  - ...
